@@ -1,0 +1,20 @@
+.booksTbl, .usersTbl {
+    border: 4px double black;
+    border-collapse: collapse;
+}
+
+.booksTbl th, .usersTbl th {
+    text-align: left;
+    background: #ccc;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.booksTbl td, .usersTbl td {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#authorth, #nameth {
+    cursor: pointer;
+}

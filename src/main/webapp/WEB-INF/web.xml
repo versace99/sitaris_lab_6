@@ -1,0 +1,27 @@
+ <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+		  version="3.1">
+   
+	<servlet>
+		<servlet-name>HelloWorld</servlet-name>
+		<servlet-class>org.webapplication.HelloWorld</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HelloWorld</servlet-name>
+		<url-pattern>/hw/*</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+        <filter-name>HWFilter</filter-name>
+        <filter-class>org.webapplication.HWFilter</filter-class>
+    </filter>
+    
+    <filter-mapping>
+        <filter-name>HWFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+</web-app>
